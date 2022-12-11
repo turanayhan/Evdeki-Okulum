@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".education.Education"
+    >
+
+
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:id="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border2"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="bottom|center"
+            app:logo="@drawable/toolbar_logo"
+            app:menu="@menu/toolbar_menu" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:id="@+id/view"
+        android:layout_below="@+id/coordinator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+    <RelativeLayout
+        android:layout_marginTop="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:background="@drawable/ss1">
+
+
+
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="LGS ve YKS öğrencileri için Fen Bilimleri dersi"
+            android:textSize="15sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/black"
+            android:alpha="0.7"
+            android:textColor="@color/white"
+            />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5">
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="12dp"
+
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:text="Lgs ve Yks öğrencileri için Fen Bilimleri dersi -49.99 TL"/>
+
+        <TextView
+            android:layout_below="@+id/text1"
+            android:id="@+id/text2"
+            android:layout_centerHorizontal="true"
+            android:paddingLeft="12dp"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/black"
+            android:textSize="9sp"
+            android:text="5-6-7-8. Sınıflar ve yks öğrencileri fen bilimleri dersi ve soru çözümü"/>
+
+
+
+
+
+        <TextView
+
+            android:layout_below="@+id/text2"
+            android:id="@+id/text3"
+            android:layout_centerHorizontal="true"
+             android:gravity="center_vertical"
+
+            android:paddingLeft="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="@color/black"
+            android:textSize="9sp"
+            android:text="Öğretim ve Akademi-Online Eğitim"/>
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/text3"
+            android:id="@+id/outlinedTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="2.4"
+            app:hintTextColor="@color/black"
+            android:hint="Seçiniz">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border2"
+                android:paddingLeft="5dp"
+                android:textSize="15sp"
+                android:minHeight="40dp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:minHeight="25dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="13dp"
+            android:layout_below="@+id/outlinedTextField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="kurs iptali durumunda paranız iade edilecektir."
+            android:textSize="8sp"
+            android:textColor="@color/black"
+            android:id="@+id/text4"
+            />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="12dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/text4"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:background="@drawable/button_normal"
+            android:text="Sepete ekle"
+            android:backgroundTint="#A863F6"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+
+        <com.google.android.material.tabs.TabLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:id="@+id/tablayout1"
+            android:layout_marginTop="15dp"
+            android:layout_below="@+id/btn1"
+            app:tabTextColor="@color/black"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            app:tabIndicatorColor="@color/black"
+           app:tabIndicatorHeight="0.5dp"
+
+
+
+
+
+            >
+
+            <com.google.android.material.tabs.TabItem
+
+                android:textAlignment="center"
+                android:backgroundTint="@color/black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab1"
+                android:text="Temel bilgiler"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tab2"
+                android:text="Kursun içeriği"/>
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tab3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yorumlar"
+                android:textDirection="inherit" />
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tablayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vpager"/>
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

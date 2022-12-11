@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".basket.Basket"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:background="@color/white"
+
+    >
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/coordinator_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/topAppBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/white"
+                app:logo="@drawable/toolbar_logo"
+                app:menu="@menu/toolbar_menu" />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+
+
+       <RelativeLayout
+           android:layout_centerHorizontal="true"
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/coordinator_layout"
+        android:gravity="clip_horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:text="Alışveriş sepeti"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/payment"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view" />
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view"
+        android:layout_above="@+id/bottoms"
+        android:id="@+id/recyler_basket"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/bottoms"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:weightSum="2"
+        android:orientation="vertical"
+        >
+        <View
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/view" />
+
+
+
+        <LinearLayout
+
+
+            android:background="#FAFAFA"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:weightSum="4">
+
+                <TextView
+
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:text="Toplam"/>
+                <TextView
+
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:text="149.9 TL"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:paddingRight="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+               android:weightSum="4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+
+                <Button
+
+                    android:id="@+id/btn_basket"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:text="Sepeti onayla"
+                    android:textSize="10dp"
+                    android:textColor="@color/white"
+                    android:background="#A863F6"
+                    android:layout_gravity="center"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+
+        android:id="@+id/homepage"
+        android:icon="@drawable/homepage_btn_control"
+        android:title="@string/homepage"
+
+        />
+    <item
+        android:id="@+id/lesson"
+        android:icon="@drawable/course_btn_control"
+        android:title="@string/livelesson" />
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/my_account_selector"
+        android:title="@string/account" />
+</menu>

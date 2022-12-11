@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Evdeki Okulum</string>
+    <string name="welcome">Evdeki Okulum´a Hoşgeldiniz</string>
+    <string name="name_surname">Ad-Soyad</string>
+    <string name="mail">E-posta adresi</string>
+    <string name="date">Doğum tarihi</string>
+    <string name="password">Parola</string>
+    <string name="password2">Parola(Tekrar)</string>
+    <string name="message">Kampanyalardan haberdar olmak için elektronik ileti</string>
+    <string name="btn_register">Kaydol</string>
+    <string name="btn_login">Giriş yap</string>
+    <string name="member">Zaten üye misiniz?</string>
+    <string name="Remember">Beni hatırla</string>
+    <string name="forget_password">Parolanımızı mı unttunuz?</string>
+    <string name="create_account">Evdeki okulum hesabınız yok mu?</string>
+    <string name="password_update">Parola güncelleme</string>
+    <string name="password_up">Güncelle</string>
+    <string name="password_change">Parolanız değiştirilmiştir.</string>
+    <string name="password_forget">Parolamı unuttum! </string>
+    <string name="password_mail">Parola linki e-posta adresinize gönderilecektir. </string>
+    <string name="send">Gönder</string>
+    <string name="password_new">Yeni parolanızı giriniz!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="homepage">Anasayfa</string>
+    <string name="livelesson">Canlı Dersler</string>
+    <string name="account">Hesabım</string>
+    <string name="user">Sayın kullanıcı,</string>
+    <string name="again">Hesabınıza tekrar giriş yapabilirsiniz.</string>
+    <string name="upcoming_lesson">Yaklaşan derslerim</string>
+    <string name="upcoming_lesson2">Yaklaşan dersiniz yoktur.</string>
+    <string name="lesson_name">Adı</string>
+    <string name="lesson_search">Canlı ders ara</string>
+    <string name="basket">Sepetim</string>
+    <string name="basket2">Alışveriş Sepetim</string>
+
+
+</resources>

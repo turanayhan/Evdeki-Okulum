@@ -1,0 +1,576 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".payment.Payment"
+    android:background="@color/white"
+
+    >
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+        android:id="@+id/coordinator_layout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/topAppBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/border2"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="bottom|center"
+            app:logo="@drawable/toolbar_logo"
+            app:menu="@menu/toolbar_menu" />
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/coordinator_layout"
+        android:gravity="clip_horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:text="Ödeme"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/payment"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view" />
+
+
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/basket_1"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/view"
+        android:background="@drawable/border_screen"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+
+        android:weightSum="4"
+        android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="match_parent"
+        android:weightSum="5"
+        android:orientation="vertical">
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:text="Sepet bilgisi"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"/>
+        <View
+
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="bottom"
+            android:layout_width="60dp"
+            android:layout_height="1dp"
+            android:background="@color/black" />
+
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="2.5"
+            android:layout_height="match_parent"
+            android:weightSum="5"
+            android:orientation="vertical">
+
+            <TextView
+                android:drawableLeft="@drawable/ic_secure_payment"
+                android:text="Güvenli Ödeme"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:paddingLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:text="Toplam"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    />
+
+                <TextView
+
+                    android:text="198 TL"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:paddingLeft="10dp"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"/>
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/basket3"
+        android:layout_height="match_parent"
+        android:layout_below="@id/basket_1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="5"
+        android:background="@drawable/border_screen"
+        android:orientation="vertical"
+        android:weightSum="6">
+
+        <LinearLayout
+            android:id="@+id/id1"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="vertical"
+            android:layout_alignParentTop="true">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Ödeme bilgisi"
+                android:textColor="@color/black" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="10dp"
+                android:background="@color/black" />
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:paddingHorizontal="10dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/id1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="9"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout
+
+                android:id="@+id/id2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedTextField"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="2.4"
+                    app:hintTextColor="@color/black"
+
+                    android:hint="Adı-Soyadı*">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/border2"
+                        android:paddingLeft="5dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/outlinedTextField2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="2.4"
+                    app:hintTextColor="@color/black"
+
+                    android:hint="Tc kimlik no/vergi no*">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/border2"
+                        android:paddingLeft="5dp"
+                        android:inputType="number"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+
+                android:id="@+id/id3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="2.4"
+                    android:hint="Telefon*"
+                    app:hintTextColor="@color/black">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/border2"
+                        android:paddingLeft="5dp"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="2.4"
+                    app:hintTextColor="@color/black"
+
+                    android:hint="E-mail*">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:background="@drawable/border2"
+                        android:paddingLeft="5dp"
+                        android:inputType="textEmailAddress"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.5"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="2.4"
+                    android:background="@drawable/border2"
+                   >
+
+                <Spinner
+                    android:gravity="center"
+                    android:id="@+id/spinner1"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2" />
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_weight="2.4"
+                    app:hintTextColor="@color/black"
+                    android:hint="posta kodu*">
+
+
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:paddingLeft="5dp"
+                        android:background="@drawable/border2"
+                        android:inputType="number"
+                        android:textSize="15sp" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4.5"
+                android:weightSum="3"
+                android:orientation="vertical"
+                android:paddingTop="10dp"
+                >
+
+
+                <TextView
+                    android:paddingLeft="9dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fatura adresi"
+                    android:textColor="@color/black"/>
+
+                <EditText
+
+                    android:id="@+id/textArea_information"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/border_screen"
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:lines="6"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:scrollHorizontally="false" />
+                <TextView
+                    android:padding="8dp"
+                    android:textSize="8sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Formu doldurduktan sonra ödeme sayfasına yönlendirileceksiniz.Ödemeyi yaparak pazaryeri Sözleşmesini kabul etmiş Olursonuz. "
+                    android:textColor="@color/black"/>
+
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="#FAFAFA"
+        android:weightSum="5"
+        android:id="@+id/basket3">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Toplam"
+                android:textColor="@color/black" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="149.9 TL"
+                android:textColor="@color/black" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="10dp"
+            android:weightSum="4">
+
+
+            <Button
+
+                android:id="@+id/btn_basket"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="#A863F6"
+                android:text="Sepeti onayla"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

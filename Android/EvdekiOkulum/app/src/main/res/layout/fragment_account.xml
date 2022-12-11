@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".menu.Account"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:background="@color/white"
+
+    >
+
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/payment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="clip_horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_centerInParent="true"
+            android:paddingLeft="8dp"
+            android:layout_marginBottom="0dp"
+            android:text="Hesabım"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_below="@id/payment"
+        android:id="@+id/id9"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/view" />
+
+
+    <RelativeLayout
+        android:id="@+id/id10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/id9"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/id8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user_btn_control" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/id8"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/id8"
+            android:orientation="vertical"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:drawableRight="@drawable/checkbox_active"
+                android:drawablePadding="15dp"
+                android:drawableTint="@color/checkbox_bg"
+                android:gravity="center"
+                android:text="Merve Özkul"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:text="E-mail"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/id10"
+        android:layout_gravity="bottom"
+        android:layout_width="match_parent"
+        android:id="@+id/id11"
+        android:layout_height="1dp"
+        android:background="@color/view" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:id="@+id/id12"
+        android:layout_below="@id/id11"
+        android:paddingLeft="20dp"
+        android:text="Yaklaşan derslerim"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"/>
+    <RelativeLayout
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/id12"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/account_list_bg">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/id6"
+            android:layout_alignParentTop="true"
+        android:background="@color/textview_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="@string/lesson_name"
+        android:textSize="20dp"
+            android:paddingLeft="5dp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"/>
+        <TextView
+            android:layout_centerHorizontal="true"
+
+
+            android:paddingLeft="10dp"
+            android:layout_below="@id/id6"
+            android:drawablePadding="15dp"
+            android:id="@+id/id7"
+            android:drawableLeft="@drawable/ic_warning_sign"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/upcoming_lesson2"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical"/>
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:layout_below="@id/id7"
+            android:layout_width="match_parent"
+               android:layout_centerHorizontal="true"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
